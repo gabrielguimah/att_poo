@@ -2,13 +2,13 @@ import javax.swing.*;
 
 public class Window extends JFrame {
     private JTextArea inputText;
-    private String[] options = {"Alta", "Média", "Baixa"};
+    private String[] options = { "Alta", "Média", "Baixa" };
     private JComboBox<String> optionsSelect;
 
     public Window() {
         windowConfig();
         setVisible(true);
-        setSize(750, 600);
+        setSize(650, 450);
         setTitle("Cadastro de Tarefas");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
@@ -19,30 +19,30 @@ public class Window extends JFrame {
 
         // Campo de texto
         inputText = new JTextArea(45, 100);
-        inputText.setBounds(60, 45, 700, 80);
+        inputText.setBounds(60, 30, 500, 80);
         inputText.setBorder(BorderFactory.createLineBorder(getForeground()));
 
         // Etiqueta do campo 1
         JLabel firstLabel = new JLabel("Tarefa");
-        firstLabel.setBounds(60, 10, 100, 30);
+        firstLabel.setBounds(60, 10, 100, 10);
         firstLabel.setOpaque(true);
 
         // Etiqueta do campo 2
         JLabel secondLabel = new JLabel("Prioridade");
-        secondLabel.setBounds(60, 200, 100, 60);
+        secondLabel.setBounds(60, 150, 100, 10);
         secondLabel.setOpaque(true);
 
         // Seletor
         optionsSelect = new JComboBox<>(options);
-        optionsSelect.setBounds(60, 260, 700, 30);
+        optionsSelect.setBounds(60, 170, 500, 30);
 
         // Botão de salvar
         JButton saveButton = new JButton("Salvar");
-        saveButton.setBounds(650, 370, 80, 30);
+        saveButton.setBounds(350, 370, 80, 30);
 
         // Botão de cancelar
         JButton cancelButton = new JButton("Cancelar");
-        cancelButton.setBounds(550, 370, 90, 30);
+        cancelButton.setBounds(450, 370, 90, 30);
 
         panel.add(firstLabel);
 
