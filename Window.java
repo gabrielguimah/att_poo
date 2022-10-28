@@ -1,4 +1,3 @@
-import javafx.scene.paint.Color;
 import javax.swing.*;
 
 public class Window extends JFrame {
