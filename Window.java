@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Window extends JFrame {
     private JTextArea inputText;
-    private String[] options = { "Alta", "Média", "Baixa" };
+    private String[] options = {"Alta", "Média", "Baixa"};
     private JComboBox<String> optionsSelect;
 
     public Window() {
