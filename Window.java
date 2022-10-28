@@ -2,17 +2,17 @@ import javax.swing.*;
 
 public class Window extends JFrame {
     private JTextArea inputText;
-    private String[] options = {"Alta","Média","Baixa"};
+    private String[] options = { "Alta", "Média", "Baixa" };
     private JComboBox<String> optionsSelect;
 
-    public Window(){
+    public Window() {
         windowConfig();
         setVisible(true);
         setSize(750, 600);
         setTitle("Cadastro de Tarefas");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-    
+
     private void windowConfig() {
         JPanel panel = new JPanel();
         panel.setLayout(null);
@@ -36,13 +36,13 @@ public class Window extends JFrame {
         optionsSelect = new JComboBox<>(options);
         optionsSelect.setBounds(60, 260, 700, 30);
 
-        //Botão de salvar
+        // Botão de salvar
         JButton saveButton = new JButton("Salvar");
         saveButton.setBounds(650, 370, 80, 30);
 
-        //Botão de cancelar
+        // Botão de cancelar
         JButton cancelButton = new JButton("Cancelar");
-        cancelButton.setBounds(550, 370, 80, 30);
+        cancelButton.setBounds(550, 370, 90, 30);
 
         panel.add(firstLabel);
 
@@ -55,7 +55,7 @@ public class Window extends JFrame {
         panel.add(optionsSelect);
 
         panel.add(inputText);
-        
+
         add(panel);
     }
 
